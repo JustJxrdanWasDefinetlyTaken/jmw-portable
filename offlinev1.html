@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Loader</title>
     <style>
-        /* Styles remain the same as in your original code */
         @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Plus+Jakarta+Sans:ital,wght@0,600;1,600&family=Quicksand:wght@300..700&display=swap');
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -304,7 +303,6 @@
     <button id="fullscreen-btn">Fullscreen</button>
     <img style="border-radius: 24px; width: 450; height: 150; float: center;" src="assets/images/advertizements.gif" onclick="window.location.href='partner.html'"></img>
     <script>
-        // Functions for popup iframe (content iframe)
         function popupGoBack() {
             const iframe = document.getElementById('content-iframe');
             iframe.contentWindow.history.back();
@@ -332,7 +330,6 @@
             }
         }
 
-        // Show and hide the popup
         document.getElementById('show-interface').addEventListener('click', function() {
             document.getElementById('popup').style.display = 'block';
         });
@@ -341,7 +338,6 @@
             document.getElementById('popup').style.display = 'none';
         });
 
-        // Load custom URL in the popup iframe
         function loadCustomURL() {
             const customURL = document.getElementById('custom-url').value;
             const iframe = document.getElementById('content-iframe');
@@ -352,13 +348,11 @@
             }
         }
 
-        // Load preset links in the popup iframe
         document.getElementById('preset-links').addEventListener('change', function() {
             const iframe = document.getElementById('content-iframe');
             iframe.src = this.value;
         });
 
-        // Functions for game iframe
         const games = [
             {
                 "name": "1",
