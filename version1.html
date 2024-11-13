@@ -344,10 +344,6 @@
   font-family:'Be Vietnam Pro', sans-serif;
 }
 
-    #titleInput::placeholder, 
-#faviconInput::placeholder {
-    color:white;
-}
 
 #close {
   cursor: pointer;
@@ -452,8 +448,8 @@
          <button onclick="resetCloak()">Reset Cloak</button>
          <h3>Emergency Cloak</h3>
          <form id="redirectForm">
-            <input type="text" id="key" placeholder="ex. /" name="key" maxlength="1" required><br><br>
-            <input type="url" id="url" placeholder="ex. https://google.com" name="url" required><br><br>
+            <input style="border-radius:10px; color:white; background-color: black; border:1px solid #ccc; font-family:'Be Vietnam Pro', sans-serif;" type="text" id="key" placeholder="ex. /" name="key" maxlength="1" required><br><br>
+            <input style="border-radius:10px; color:white; background-color: black; border:1px solid #ccc; font-family:'Be Vietnam Pro', sans-serif;" type="url" id="url" placeholder="ex. https://google.com" name="url" required><br><br>
             <button type="submit">Set Redirect</button>
             <button id="resetButton">Reset All Redirects</button>
         </form>
