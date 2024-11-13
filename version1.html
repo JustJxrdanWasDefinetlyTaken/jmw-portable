@@ -707,15 +707,13 @@ function applyCloak() {
 
     const faviconInput = document.getElementById('faviconInput').value;
     if (faviconInput) {
-        const faviconLink = document.getElementById('favicon');
-        faviconLink.href = faviconInput.startsWith('https://') ? faviconInput : 'https://' + faviconInput;
+        updateFavicon(faviconInput.startsWith('https://') ? faviconInput : 'https://' + faviconInput);
     }
 }
 
 function resetCloak() {
     document.title = initialTitle;
-    const faviconLink = document.getElementById('favicon');
-    faviconLink.href = initialFavicon;
+    updateFavicon(initialFavicon);
 
     document.getElementById('titleInput').value = '';
     document.getElementById('faviconInput').value = '';
@@ -733,6 +731,21 @@ function applyPreset() {
         applyCloak();
     }
 }
+
+function updateFavicon(faviconUrl) {
+    const existingFavicon = document.getElementById('favicon');
+    if (existingFavicon) {
+        existingFavicon.remove();
+    }
+
+    const newFavicon = document.createElement('link');
+    newFavicon.id = 'favicon';
+    newFavicon.rel = 'icon';
+    newFavicon.href = faviconUrl;
+
+    document.head.appendChild(newFavicon);
+}
+
 
 function openSettings() {
       document.getElementById('settingsTab').style.display = 'block';
