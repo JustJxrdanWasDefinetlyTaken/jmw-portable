@@ -441,6 +441,16 @@
          <button onclick="enableAboutBlank()">Enable</button>
          <button onclick="disableAboutBlank()">Disable</button>
          <h3>Tab Cloaking</h3>
+                <label for="presetSelect">Choose a Preset:</label>
+    <select id="presetSelect" onchange="applyPreset()">
+        <option value="">Select a preset</option>
+        <option value="google">Google</option>
+        <option value="schoology">Schoology</option>
+        <option value="IReady">Iready</option>
+        <option value="classes">Google Classroom</option>
+        <option value="readtheory">Read Theory</option>
+        <option value="clever">Clever</option>
+    </select>
             <p>Title</p>
          <input type="text" id="titleInput" placeholder="(ex: Google)">
             <p>Favicon</p>
@@ -640,8 +650,35 @@ document.getElementById('preset-links').addEventListener('change', function () {
     window.onload = () => loadGames();
         </script>
         <script>
-               let initialTitle = document.title;
+let initialTitle = document.title;
 let initialFavicon = document.getElementById('favicon').getAttribute('href');
+
+const presets = {
+    google: {
+        title: "Google",
+        favicon: "https://www.google.com/favicon.ico"
+    },
+    iready: {
+        title: "i-Ready",
+        favicon: "https://login.i-ready.com/favicon.ico"
+    },
+    schoology: {
+        title: "Home | Schoology",
+        favicon: "https://www.powerschool.com/favicon.ico"
+    },
+    readtheory: {
+        title: "ReadTheory | Free Reading Comprehension Practice for Students and Teachers",
+        favicon: "https://readtheory.org/favicon.ico"
+    },
+    clever: {
+        title: "Clever | Portal",
+        favicon: "https://clever.com/favicon.ico"
+    },
+    classes: {
+        title: "Home",
+        favicon: "https://ssl.gstatic.com/classroom/favicon.png"
+    }
+};
 
 function applyCloak() {
     const titleInput = document.getElementById('titleInput').value;
@@ -663,7 +700,21 @@ function resetCloak() {
 
     document.getElementById('titleInput').value = '';
     document.getElementById('faviconInput').value = '';
+    document.getElementById('presetSelect').value = '';
 }
+
+function applyPreset() {
+    const presetSelect = document.getElementById('presetSelect');
+    const selectedPreset = presetSelect.value;
+
+    if (selectedPreset && presets[selectedPreset]) {
+        const { title, favicon } = presets[selectedPreset];
+        document.getElementById('titleInput').value = title;
+        document.getElementById('faviconInput').value = favicon;
+        applyCloak();
+    }
+}
+
 function openSettings() {
       document.getElementById('settingsTab').style.display = 'block';
     }
