@@ -11,4 +11,5 @@
 - Has a browser that uses iframe links.
 - Has settings to hide/cloak your tab.
 
-# Settings up 
+# Set the website up
+- go to <a href="//lite.jordansmath.work">The lite website</a> and press 'download'
