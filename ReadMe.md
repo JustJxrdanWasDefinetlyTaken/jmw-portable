@@ -3,7 +3,7 @@
 <h1 align="center">JMW Lite</h1>
 <p align="center">Simple, Downloadable, Lightweight, Unblocked.</p>
 
-<h1 align="center">Features:</h1>
+# Features:
 - Wide collection of games
 - Downloadable, a simple bookmark can navigate you to your destination.
 - Simple and Lightweight.
