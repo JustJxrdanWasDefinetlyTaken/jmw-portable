@@ -13,7 +13,7 @@
 - Has an extra feature called 'exploits'.
 
 # Set the website up
-- go to <a href="//lite.jordansmath.work">The lite website</a> and press 'download', or go to <a href="https://raw.githubusercontent.com/JustJxrdanWasDefinetlyTaken/jmw-offline/refs/heads/main/version1.html">Here</a> and do ctrl + s.
+- For tutorials, go to <a href="https://github.com/JustJxrdanWasDefinetlyTaken/jmw-offline/blob/main/wiki.md">JMWiki</a> and look at setup.
 
 > [!IMPORTANT]  
 > Jordan's Math Work LITE should NOT be used for deploying to static hosts, as it runs locally in your files.
