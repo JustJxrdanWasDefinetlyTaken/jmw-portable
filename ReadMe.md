@@ -7,7 +7,7 @@
 - Wide collection of games
 - Downloadable, a simple bookmark can navigate you to your destination.
 - Simple and Lightweight, uses less than 200KB.
-- Uses CDN's
+- Uses CDN's based off your blocker.
 - Has a browser that uses iframe links.
 - Has settings to hide/cloak your tab.
 - Has an extra feature called 'exploits'.
