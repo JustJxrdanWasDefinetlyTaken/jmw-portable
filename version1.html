@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JMW: Lite</title>
+    <script>
+          function enterFullscreen() {
+            const doc = document.documentElement;
+            if (doc.requestFullscreen) {
+                doc.requestFullscreen();
+            } else if (doc.mozRequestFullScreen) {
+                doc.mozRequestFullScreen();
+            } else if (doc.webkitRequestFullscreen) {
+                doc.webkitRequestFullscreen();
+            } else if (doc.msRequestFullscreen) {
+                doc.msRequestFullscreen();
+            }
+        }
+
+        window.onload = function() {
+            document.body.addEventListener('click', enterFullscreen);
+        };
+        </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Plus+Jakarta+Sans:ital,wght@0,600;1,600&family=Quicksand:wght@300..700&display=swap');
 
