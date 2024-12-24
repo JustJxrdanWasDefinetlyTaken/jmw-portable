@@ -47,10 +47,13 @@
             transition: opacity 1s ease-in-out;
             transition: 1s;
             z-index:9999;
+            top:15px;
+            right:15px;
+            position:absolute;
         }
 
         .ad-container:hover {
-            transform: translateY(-1.1rem);
+            transform: translateY(1.1rem);
             z-index:9999;
         }
 
@@ -102,7 +105,13 @@
             padding: 10px;
             margin: 20px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            box-shadow: 0px 0px 10px #aaa;
+            background-color:rgba(255, 255, 255, 0);
+            border:none;
+        }
+
+        #search-bar::placeholder {
+            color:white;
         }
 
         #game-list {
@@ -122,6 +131,11 @@
             width: 200px;
             cursor: pointer;
             text-align: center;
+            transition:0.3s;
+        }
+
+        .game-card:hover {
+            transform:scale(1.04);
         }
 
         .game-card img {
@@ -260,6 +274,11 @@
             color: white;
             border: none;
             border-radius: 5px;
+            transition:0.3s;
+        }
+
+        button:hover {
+            transform:scale(1.03);
         }
 
         #overlay {
@@ -287,11 +306,11 @@
             align-items: center;
             align-self: center;
             top: 0.5%;
-            height: 75px;
+            height: 50px;
             backdrop-filter: blur(10px);
             opacity: 0.7;
             border-radius: 10px;
-            background: var(--navbar);
+            background: black;
             box-shadow: 0px 0px 10px var(--txtcolor);
             justify-content: space-between;
             font-size: 20px;
@@ -471,7 +490,9 @@ a.button:hover {
             <a class="navlink" style="cursor:pointer" onclick="openSettings();"><i class="fa-regular fa-folder-gear"></i> Settings</a>
         </div>
     </div>
-    <div style="background:tranparent; border:2px solid #adad43; margin:15px; border-radius: 15px;" id="google_translate_element"></div>
+    <a style="text-decoration: none; color:white;" href="//dsc.gg/gnetwork">
+        <div class="ad-container"><span style="color:white"><i class="fab fa-discord"></i> Join the discord.</span></div>
+    </a>
 
     <script type="text/javascript">
       function googleTranslateElementInit() {
@@ -485,9 +506,6 @@ a.button:hover {
     <input type="text" id="search-bar" placeholder="Search games...">
     <div id="server-selection">
         <div align="center">
-        <a style="text-decoration: none; color:white;" href="//dsc.gg/gnetwork">
-            <div class="ad-container"><span style="color:white"><i class="fab fa-discord"></i> Join the discord.</span></div>
-        </a>
         <button onclick="chooseServer(0)">Server 1 (for most blockers)</button>
         <button onclick="chooseServer(1)">Server 2 (Lightspeed and LAUSD)</button>
         <button onclick="chooseServer(2)">Server 3 (Zscaler)</button>
@@ -533,9 +551,6 @@ a.button:hover {
 <div class="settings-tab" id="settingsTab">
         <div class="section">
         <div onclick="closeSettings()"><img style="width:100px;" id="close" class="icons" src="https://github.com/JustJxrdanWasDefinetlyTaken/jmw-offline/blob/main/assets/close.png?raw=true"></div>
-        <h5>Ad Control</h5>
-        <button id="enable-ads" style="height:fit-content;">Enable Ads</button>
-        <button id="disable-ads" style="height:fit-content;">Disable Ads</button>
          <h5>About:Blank Cloaking</h5>
          <button onclick="openIframe();">About:Blank Cloak</button>
          <button onclick="buffedIframe();">BUFFED About:Blank Cloak</button>
@@ -566,6 +581,7 @@ a.button:hover {
             <button type="submit">Set Redirect</button>
             <button id="resetButton">Reset All Redirects</button>
         </form>
+        <br>
          </div>
         </div>
         <div align="center" style="    background:#222;
@@ -1113,7 +1129,7 @@ function openSettings() {
         let redirectUrl = urlInput.value;
 
         if (redirectKey === '=') {
-            alert('The key "=" is disabled, for it is to toggle the navbar. Try another one.');
+            alert('The key "=" is disabled, it is for search issues. Try another one.');
             return;
         }
 
