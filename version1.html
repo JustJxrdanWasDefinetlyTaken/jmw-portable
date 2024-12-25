@@ -5,24 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JMW: Lite</title>
-    <script>
-          function enterFullscreen() {
-            const doc = document.documentElement;
-            if (doc.requestFullscreen) {
-                doc.requestFullscreen();
-            } else if (doc.mozRequestFullScreen) {
-                doc.mozRequestFullScreen();
-            } else if (doc.webkitRequestFullscreen) {
-                doc.webkitRequestFullscreen();
-            } else if (doc.msRequestFullscreen) {
-                doc.msRequestFullscreen();
-            }
-        }
-
-        window.onload = function() {
-            document.body.addEventListener('click', enterFullscreen);
-        };
-        </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Plus+Jakarta+Sans:ital,wght@0,600;1,600&family=Quicksand:wght@300..700&display=swap');
 
@@ -384,6 +366,11 @@
             border: none;
             background-color:transparent;
             border:0.5px solid #adad43;
+            color:white;
+            outline:none;
+        }
+        #custom-url::placeholder {
+            color:white;
         }
         #titleInput,
 #faviconInput {
@@ -755,60 +742,6 @@ function addThemeOption(name, bg, color, scrollbar) {
     alert(`Theme "${name}" added!`);
 }
     </script>
-<script>
-       const enableAdsButton = document.getElementById('enable-ads');
-        const disableAdsButton = document.getElementById('disable-ads');
-
-        let adsEnabled = false;
-        const adScripts = [
-            function() {
-                var d = document,
-                    s = d.createElement('script'),
-                    l = d.scripts[d.scripts.length - 1];
-                s.settings = {};
-                s.src = "//glaringregister.com/a.W/5ywpYKWcdwl/QT2H9OkZZKTT9/6Mba2m5zl/STWjQA9/NfT/Aj5/N-jZEB5/MyiP0T1dMgDTkB2fM/T_k_zC";
-                s.async = true;
-                l.parentNode.insertBefore(s, l);
-            },
-            function() {
-                var d = document,
-                    s = d.createElement('script'),
-                    l = d.scripts[d.scripts.length - 1];
-                s.settings = {};
-                s.src = "//glaringregister.com/biXkVLsud.G/lc0/Y_Wec_/WejmZ9pufZHUMlZkUPjT/U/w/OzT/YixtOgTnQ/tyNtTJAH5mNdjvEW5eNjQz";
-                s.async = true;
-                l.parentNode.insertBefore(s, l);
-            }
-        ];
-
-        function enableAds() {
-            if (!adsEnabled) {
-                adsEnabled = true;
-                adScripts.forEach(script => script());
-                alert("Ads have been enabled.");
-            } else {
-                alert("Ads are already enabled.");
-            }
-        }
-
-        function disableAds() {
-            if (adsEnabled) {
-                adsEnabled = false;
-                const scripts = document.querySelectorAll('script[src*="glaringregister.com"]');
-                scripts.forEach(script => script.remove());
-                alert("Ads have been disabled.");
-            } else {
-                alert("Ads are already disabled.");
-            }
-        }
-
-        window.onload = function() {
-            enableAds();
-        };
-
-        enableAdsButton.addEventListener('click', enableAds);
-        disableAdsButton.addEventListener('click', disableAds);
-</script>
         <script>
           function popupGoBack() {
     const iframe = document.getElementById('content-iframe');
@@ -1103,6 +1036,7 @@ const presetLinks = document.getElementById('preset-links');
             return;
         }
 
+
         const server = servers[currentServerIndex];
         const iframe = document.getElementById('game-iframe');
         iframe.src = server + path;
@@ -1382,5 +1316,72 @@ function buffedIframe() {
 }
         </script>
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    let hasShownOverlay = false;
 
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+    overlay.style.color = "white";
+    overlay.style.display = "flex";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+    overlay.style.fontSize = "24px";
+    overlay.style.zIndex = "99999";
+    overlay.style.cursor = "pointer";
+    overlay.textContent = "Click anywhere for full performance.";
+    document.body.appendChild(overlay);
+
+    const requestFullscreen = () => {
+        const element = document.documentElement;
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+    };
+
+    const isFullscreen = () => {
+        return !!(
+            document.fullscreenElement || 
+            document.webkitFullscreenElement || 
+            document.mozFullScreenElement || 
+            document.msFullscreenElement
+        );
+    };
+
+    const toggleOverlay = (show) => {
+        overlay.style.display = show ? "flex" : "none";
+    };
+
+    overlay.addEventListener("click", () => {
+        if (!hasShownOverlay) {
+            requestFullscreen();
+        }
+        hasShownOverlay = true;
+        toggleOverlay(false);
+    });
+
+    document.addEventListener("fullscreenchange", () => {
+        if (!isFullscreen()) {
+            if (!hasShownOverlay) {
+                toggleOverlay(true);
+            }
+        }
+    });
+
+    if (isFullscreen() || hasShownOverlay) {
+        toggleOverlay(false);
+    }
+});
+</script>
 </html>
