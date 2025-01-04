@@ -105,7 +105,7 @@
             padding: 10px;
             margin: 20px;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px #aaa;
+            box-shadow: 0px 0px 10px var(--scrollbar-color,#aaa);
             background-color:rgba(255, 255, 255, 0);
             border:none;
         }
@@ -365,7 +365,7 @@
             border-radius: 70px;
             border: none;
             background-color:transparent;
-            border:0.5px solid #adad43;
+            border:0.5px solid var(--scrollbar-color,#adad43);
             color:white;
             outline:none;
         }
@@ -563,12 +563,13 @@ a.button:hover {
         onclick="window.location.href='https://mindspaceacademics.nekros.info/'"></img>
         <br>
 <div class="settings-tab" id="settingsTab">
-<div class="section">
     <h5>Themes</h5>
             <select id="theme-selector">
             <option value="default">Default</option>
+            <option value="light">Light Mode</option>
+            <option value="dark">Dark Mode</option>
             <option value="3kh0">3kh0</option>
-            <option value="light">Light</option>
+            <option value="plexile">PLEXILE ARCADE</option>
         </select>
         <button id="add-theme">Add Theme</button>
         <div onclick="closeSettings()"><img style="width:50px;" id="close" class="icons" src="https://github.com/JustJxrdanWasDefinetlyTaken/jmw-offline/blob/main/assets/close.png?raw=true"></div>
@@ -603,8 +604,7 @@ a.button:hover {
             <button id="resetButton">Reset All Redirects</button>
         </form>
         </div>
-        </div>
-        <div align="center" style="    background:#222;
+        <div align="center" style="background:#222;
         overflow-y:auto;
         max-height: 450px;
         overflow-y: auto;
@@ -699,13 +699,31 @@ function switchTheme(theme) {
         root.style.setProperty('--scrollbar-color', '#FF5733');
         message.textContent = '3kh0 theme activated!';
     } else if (theme === 'light') {
-        body.style.backgroundColor = '#808080';
+        body.style.backgroundColor = 'gray';
+        body.style.color = '#ffffff';
+        buttons.forEach(button => {
+            button.style.backgroundColor = 'lightgray';
+            button.style.color = '#000';
+        });
+        root.style.setProperty('--scrollbar-color', 'lightgray');
+        message.textContent = 'Light theme activated!';
+    } else if (theme === 'dark') {
+        body.style.backgroundColor = '#000';
         body.style.color = '#fff';
         buttons.forEach(button => {
-            button.style.backgroundColor = '#000';
+            button.style.backgroundColor = '#333';
             button.style.color = '#fff';
         });
-        root.style.setProperty('--scrollbar-color', '#000');
+        root.style.setProperty('--scrollbar-color', '#333');
+        message.textContent = 'Light theme activated!';
+    } else if (theme === 'plexile') {
+        body.style.backgroundColor = '#0f0f0f';
+        body.style.color = '#C93131';
+        buttons.forEach(button => {
+            button.style.backgroundColor = '#C93131';
+            button.style.color = '#fff';
+        });
+        root.style.setProperty('--scrollbar-color', '#C93131');
         message.textContent = 'Light theme activated!';
     } else if (theme !== 'default') {
         const themeData = JSON.parse(localStorage.getItem(`theme-${theme}`));
@@ -729,7 +747,7 @@ function switchTheme(theme) {
         root.style.setProperty('--scrollbar-color', '');
         message.textContent = 'Default theme activated!';
     }
-}
+};
 
 function addThemeOption(name, bg, color, scrollbar) {
     const option = document.createElement('option');
