@@ -17,3 +17,4 @@
 
 > [!IMPORTANT]  
 > Jordan's Math Work LITE should NOT be used for deploying to static hosts, as it runs locally in your files.
+> Jordan's Math Work LITE should NOT be downloaded on an I-pad or phone, since it has 0 mobile support, it's mainly for PC.
