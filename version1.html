@@ -596,6 +596,7 @@
             <button onclick="chooseServer(0)">Server 1 (for most blockers)</button>
             <button onclick="chooseServer(1)">Server 2 (Lightspeed and LAUSD)</button>
             <button onclick="chooseServer(2)">Server 3 (Zscaler)</button>
+            <button onclick="chooseServer(3)">Server 4 (content keeper + all other blockers)</button>
         </div>
     </div>
     <div id="popup">
@@ -977,7 +978,7 @@
             const urlPattern = /^(https?:\/\/)?([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})(\/.*)?$/;
             if (urlPattern.test(customURL)) {
                 iframe.src = customURL;
-                localStorage.setItem('customURL', customURL); // Save to localStorage
+                localStorage.setItem('customURL', customURL);
             } else {
                 alert("Please enter a valid URL.");
             }
@@ -1196,7 +1197,7 @@
             {
                 "name": "Champion Island",
                 "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/champion-island/splash.png?raw=true",
-                "description": "i am the tiger of the- oh hell nah you slow as hell, you gotta quit",
+                "description": "Google Duddle",
                 "path": "champion-island/index.html"
             },
             {
@@ -1204,6 +1205,12 @@
                 "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/chrome-dino/images/default_100_percent/offline/100-disabled.png?raw=true",
                 "description": "hurdle",
                 "path": "chrome-dino/index.html"
+            },
+            {
+                "name": "Circlo",
+                "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/circlo/img/download.png?raw=true",
+                "description": "Aliens minds think alike.",
+                "path": "circlo/index.html"
             },
             {
                 "name": "Draw The Hill",
@@ -1312,7 +1319,8 @@
         const servers = [
             "https://learn-with.jskjsv6.workers.dev/GalacticNetwork/3kh0-assets/main/",
             "https://cdn.minnetonkamiddleschooleast.online/GalacticNetwork/3kh0-assets/main/",
-            "https://schoology-learning.us.kg/GalacticNetwork/3kh0-assets/main/"
+            "https://schoology-learning.us.kg/GalacticNetwork/3kh0-assets/main/",
+            "https://cdn.galacticnetwork.org/GalacticNetwork/3kh0-assets/main/"
         ];
 
         let currentServerIndex = null;
@@ -1666,7 +1674,7 @@
         overlay.style.fontSize = "24px";
         overlay.style.zIndex = "999999";
         overlay.style.cursor = "pointer";
-        overlay.textContent = "Before we get to gaming, click anywhere for full performance.";
+        overlay.textContent = "Before you access the site, click anywhere for full performance.";
         document.body.appendChild(overlay);
 
         const requestFullscreen = () => {
@@ -1739,7 +1747,8 @@
         "2025 and there's already a roblox predator, 2026 is my year fr",
         "A new series of jordan's math work, not replacing v6 though.",
         "Live, Love, The strongest battlegrounds.",
-        "The wolf howls but the hawk tuahs."
+        "The wolf howls but the hawk tuahs.",
+        "super sayian "
     ];
     const randomSubtitle = subtitles[Math.floor(Math.random() * subtitles.length)];
 
