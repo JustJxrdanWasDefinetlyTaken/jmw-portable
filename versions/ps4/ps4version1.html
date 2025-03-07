@@ -2,8 +2,66 @@
     <head>
         <meta charset="UTF-8">
             <title>PS4</title>
+            <link rel="stylesheet" type="text/css" href="https://raw.rawgit.net/JustJxrdanWasDefinetlyTaken/jmw-ub/main/static/assets/style/apzpage.css">
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <style>
+                .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background-color: #22222289;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+.modal iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #77daff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+.modal-fullscreen {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #77daff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+            </style>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 body{
@@ -30,7 +88,7 @@ header div{
 
 #plus{
 	width: 3em;
-	background-image: url("https://s20.postimg.org/9jdjr9lml/plus.png");
+	background-image: url("https://github.com/JustJxrdanWasDefinetlyTaken/jmw-portable/blob/main/assets/versionfiles/ps4/plus.png?raw=true");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -39,7 +97,7 @@ header div{
 
 #info{
 	width: 3em;
-	background-image: url("https://i.postimg.cc/m2x13xDd/info.png");
+	background-image: url("https://github.com/JustJxrdanWasDefinetlyTaken/jmw-portable/blob/main/assets/versionfiles/ps4/info.png?raw=true");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -56,7 +114,7 @@ header div{
 
 #friends{
 	width: 3em;
-	background-image: url("https://i.postimg.cc/vHwbv8v1/friends.png");
+	background-image: url("https://github.com/JustJxrdanWasDefinetlyTaken/jmw-portable/blob/main/assets/versionfiles/ps4/friends.png?raw=true");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -66,7 +124,7 @@ header div{
 #user{
 	margin-left: 1em;
 	width: 3em;
-	background-image: url("https://s20.postimg.org/yvwsexlfh/user.png");
+	background-image: url("https://github.com/JustJxrdanWasDefinetlyTaken/jmw-portable/blob/main/assets/logo.png?raw=true");
 	background-size: 140%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -84,7 +142,7 @@ header div{
 #trophies{
 	margin-left: 1em;
 	width: 3em;
-	background-image: url("https://i.postimg.cc/wTKmp1Cx/trophy.png");
+	background-image: url("https://github.com/JustJxrdanWasDefinetlyTaken/jmw-portable/blob/main/assets/versionfiles/ps4/trophy.png?raw=true");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -438,7 +496,7 @@ header div{
                         <div id="per" class="storeGame"></div>
                     </div>
                 </div>
-                <div class="squareGame animated bounceInLeft">
+                <div class="squareGame animated bounceInLeft" id="PopUp" data-url="" data-name="google">
                     <div class="imgGame new"></div>
                     <div class="gameText ascii">▼</div>
                     <span class="gameTitle">What's New</span>
@@ -484,6 +542,13 @@ header div{
               <div class='wave -one'></div>
               <div class='wave -two'></div>
               <div class='wave -three'></div>
+            </div>
+            <div class="modal" id="gameModal">
+                <div class="modal-content">
+                    <button class="modal-close" id="closeModal">&times;</button>
+                    <button class="modal-fullscreen" id="fullscreenModal">&#x26F6;</button>
+                    <iframe class="frame" id="gameIframe" src=""></iframe>
+                </div>
             </div>
         </body>
         <script>
@@ -654,5 +719,69 @@ if (t < 10) {
 }
 
 setTime();
+        </script>
+        <script>
+                            function toggleFullscreen() {
+            let elem = document.querySelector('.frame');
+
+            if (!document.fullscreenElement) {
+              elem.requestFullscreen().catch((err) => {
+                alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+              });
+            } else {
+              document.exitFullscreen();
+            }
+          }
+        </script>
+        <script>
+       const games = document.querySelectorAll('#PopUp');
+    const modal = document.getElementById('gameModal');
+    const iframe = document.getElementById('gameIframe');
+    const closeModal = document.getElementById('closeModal');
+    const fullscreenModal = document.getElementById('fullscreenModal');
+    const searchBar = document.getElementById('searchBar');
+    const gameContainer = document.getElementById('gameContainer');
+
+    games.forEach(game => {
+        game.addEventListener('click', () => {
+            const gameUrl = game.getAttribute('data-url');
+            iframe.src = gameUrl;
+            modal.style.display = 'flex';
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        iframe.src = '';
+    });
+
+    fullscreenModal.addEventListener('click', () => {
+        if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+        } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+        }
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            iframe.src = '';
+        }
+    });
+
+    searchBar.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        games.forEach(game => {
+            const gameName = game.getAttribute('data-name').toLowerCase();
+            if (gameName.includes(query)) {
+                game.style.display = 'block';
+            } else {
+                game.style.display = 'none';
+            }
+        });
+    });
         </script>
 </html>
