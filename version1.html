@@ -594,9 +594,8 @@
     <div id="server-selection">
         <div align="center">
             <button onclick="chooseServer(0)">Server 1 (for most blockers)</button>
-            <button onclick="chooseServer(1)">Server 2 (Lightspeed and LAUSD)</button>
+            <button onclick="chooseServer(1)">Server 2 (Lightspeed)</button>
             <button onclick="chooseServer(2)">Server 3 (Zscaler)</button>
-            <button onclick="chooseServer(3)">Server 4 (content keeper + all other blockers)</button>
         </div>
     </div>
     <div id="popup">
@@ -650,6 +649,7 @@
                 <option value="cloud9">Cloud 9</option>
                 <option value="purple">Purple</option>
                 <option value="galactic">Galactic</option>
+                <option value="rain">Rainy Day</option>
                 <option value="retrocity">Rainy Day; Pixelated</option>
             </select>
             <button id="add-theme">Add Theme</button>
@@ -758,6 +758,8 @@
     </div>
     </div>
     </div>
+    <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</body>
     <script>
         const themeSelector = document.getElementById('theme-selector');
         const presetSelect = document.getElementById('presetSelect');
@@ -878,6 +880,20 @@
     });
 
     root.style.setProperty('--scrollbar-color', '#22205C');
+    message.textContent = 'Rainy Day Retro theme activated!';
+} else if (theme === 'rain') {
+    body.style.background = 'url("https://github.com/JustJxrdanWasDefinetlyTaken/jmw-portable/blob/main/assets/themes/foggy-night-on-city-skyline-i144119jhzl59thh.gif?raw=true")';
+    body.style.color = 'white';
+    body.style.backgroundRepeat = 'no-repeat';
+    body.style.backgroundAttachment = 'fixed';
+    body.style.backgroundSize = 'cover';
+    
+    buttons.forEach(button => {
+        button.style.backgroundColor = 'gray';
+        button.style.color = 'white';
+    });
+
+    root.style.setProperty('--scrollbar-color', 'gray');
     message.textContent = 'Rainy Day Retro theme activated!';
 } else if (theme !== 'default') {
                 const themeData = JSON.parse(localStorage.getItem(`theme-${theme}`));
@@ -1343,9 +1359,8 @@
 
         const servers = [
             "https://learn-with.jskjsv6.workers.dev/GalacticNetwork/3kh0-assets/main/",
-            "https://cdn.minnetonkamiddleschooleast.online/GalacticNetwork/3kh0-assets/main/",
+            "https://rawgit.net/GalacticNetwork/3kh0-assets/main/",
             "https://schoology-learning.us.kg/GalacticNetwork/3kh0-assets/main/",
-            "https://cdn.galacticnetwork.org/GalacticNetwork/3kh0-assets/main/"
         ];
 
         let currentServerIndex = null;
@@ -1680,7 +1695,6 @@
             window.location.replace("https://nasa.gov");
         }
     </script>
-</body>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         let hasShownOverlay = false;
