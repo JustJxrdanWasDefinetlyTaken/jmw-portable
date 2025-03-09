@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMW-Tendo Switch</title>
+    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+        /*=========== global =============*/
+:focus {
+	outline: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.v-center {
+	align-items: center;
+}
+
+body {
+	--bg: #111111;
+	background: var(--bg);
+    font-family:'Be Vietnam Pro', sans-serif;
+}
+
+.wrapper {
+	--static: #2D2D2D;
+	--solid: #FFF;
+	--shadow: 0 0 5px rgba(0, 0, 0, .05);
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	height: 100vh;
+	width: 100%;
+}
+
+html {
+	font-family: 'Oxygen';
+	color: var(--static);
+	user-select: none;
+}
+
+span {
+	display: inline-block;
+	line-height: 1;
+}
+
+a {
+	position: relative;
+	--focus-light: #3FE9D3;
+	--focus-dark: #04B9C3;
+}
+
+a:after {
+	display: none;
+	content: attr(data-attr);
+	position: absolute;
+	bottom: -80px;
+	left: 50%;
+	transform: translate(-50%, -42.5px);
+	font-size: 26px;
+	font-weight: 300;
+	white-space: pre;
+	color: var(--focus-dark);
+}
+
+a:hover:after,
+a:focus:after {
+	display: inline-block;
+}
+
+a:hover,
+a:focus {
+	animation: focus 1s infinite;
+}
+
+@keyframes focus {
+	0% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+	}
+	50% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-dark);
+	}
+	100% {
+		box-shadow: var(--shadow), 0 0 0 5px var(--focus-light);
+	}
+}
+
+
+/*=========== header =============*/
+
+header {
+	margin-bottom: auto;
+	padding: 0 25px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+header > * {
+	margin: 0 10px;
+}
+
+header > *:first-child,
+.games .item:first-child {
+	margin-left: 0;
+}
+
+header > *:last-child,
+.games .item:last-child {
+	margin-right: 0;
+}
+
+a.profile {
+	margin-right: auto;
+	--d: 60px;
+	width: var(--d);
+	height: var(--d);
+	border: 3px solid var(--solid);
+	background: var(--bg);
+	box-shadow: var(--shadow);
+	border-radius: 100%;
+}
+
+a.profile:after {
+	font-size: .75em;
+}
+
+.battery span i {
+	font-style: initial;
+	font-size: .6em;
+}
+
+
+/*=========== main =============*/
+
+main {
+	position: relative;
+	margin: 0 -20px;
+}
+
+.games {
+	position: relative;
+	margin-bottom: 50px;
+	padding: 10px 95px;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+.games::-webkit-scrollbar {
+	height: 0px;
+}
+
+.games .item {
+	display: inline-block;
+	margin: 0 7px;
+	--d: 255px;
+	height: var(--d);
+	width: var(--d);
+	flex-shrink: 0;
+	background: var(--bg);
+	border: 3px solid var(--solid);
+	box-shadow: var(--shadow);
+	overflow: hidden;
+}
+.games .item img {
+	width: 100%;
+}
+
+main nav {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+main nav a {
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 10px;
+	--d: 85px;
+	height: var(--d);
+	width: var(--d);
+	background: var(--solid);
+	box-shadow: var(--shadow);
+	border-radius: 100%;
+}
+
+
+/*=========== footer =============*/
+
+footer {
+	position: relative;
+	margin-top: auto;
+	padding: 20px 25px 0;
+	font-size: 24px;
+	border-top: 2px solid var(--static);
+}
+
+.mode {
+	margin-right: auto;
+}
+
+.accept .btn {
+	--d: 25px;
+	margin-right: 12px;
+	display: inline-block;
+	width: var(--d);
+	height: var(--d);
+	background: var(--static);
+	border-radius: 100%;
+	font-size: .75em;
+	text-align: center;
+	color: var(--bg);
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper flex flex-col">
+        <header class="flex v-center">
+            <a data-attr="User's Page" href="#" class="profile"><img style="width:100%;" src="https://github.com/JustJxrdanWasDefinetlyTaken/jmw-portable/blob/main/assets/logo.png?raw=true"></a>
+            <div class="time">
+                <span id="time"></span>
+            </div>
+            <div class="wifi">
+                <img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9a2ZOZ2tieDdEMkE" />
+            </div>
+            <div class="battery">
+                <span>100<i>%</i></span>
+                <img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9dTgzdm9FbDdqeWM" />
+            </div>
+        </header>
+        <main>
+            <div class="games">
+                <a href="#" class="item"><img src="https://www.nintendo.de/games/oms/breath_of_the_wild/media/wallpapers/mobile-1.jpg"/></a>
+                <a href="#" class="item"><img src="https://cdn03.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_ShovelKnightTreasureTrove.jpg"/></a>
+                <a href="#" class="item"><img src="https://cdn03.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_SuperBombermanR.jpg"/></a>
+                <a href="#" class="item"></a>
+                <a href="#" class="item"></a>
+                <a href="#" class="item"></a>
+                <a href="#" class="item"></a>
+                <a href="#" class="item"></a>
+                <a href="#" class="item"></a>
+                <a href="#" class="item"></a>
+            </div>
+            <nav>
+                <a data-attr="News" href="#"><img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9ZjRxM1padXVqRzQ" /></a>
+                <a data-attr="Nintendo eShop" href="#"><img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9Z1VkSkJNZ0RNUE0" /></a>
+                <a data-attr="Album" href="#"><img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9eDZhYmQ1MnNiWUU" /></a>
+                <a data-attr="Controllers" href="#"><img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9XzFXbTVuV3BUSEU" /></a>
+                <a data-attr="System Settings" href="#"><img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9TDVrc09UUXIySFU" /></a>
+                <a data-attr="Sleep Mode" href="#"><img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9YUpPUW5Eb0J0NVE" /></a>
+            </nav>
+        </main>
+        <footer class="flex">
+            <div class="mode">
+                <img src="https://drive.google.com/uc?export=download&id=0B6iZr0VRyLE9cVBsb0pIRUMyNkE" />
+            </div>
+            <div class="accept flex v-center">
+                <div class="btn">A</div>
+                <span>OK</span>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    function checkTime(i) {
+	if (i < 10) {
+		i = "0" + i;
+	}
+	return i;
+}
+
+function startTime() {
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+
+	m = checkTime(m);
+	document.getElementById('time').innerHTML = h + ":" + m;
+	t = setTimeout(function() {
+		startTime()
+	}, 500);
+}
+startTime();
+</script>
+</html>
