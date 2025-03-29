@@ -1,0 +1,506 @@
+[
+    {
+        "name": "Discord Chat",
+        "image": "https://github.com/GalacticNetwork/jordansmathwork-v6/blob/main/assets/images/app/discord.jpg?raw=true",
+        "description": "Chat with friends with the official JMW chat!",
+        "path": "dsc/index.html"
+    },
+    {
+        "name": "Suggestions",
+        "image": "https://github.com/GalacticNetwork/jordansmathwork-v6/blob/main/assets/images/forms2.png?raw=true",
+        "description": "Send suggestions to the team of galactic network!",
+        "path": "suggestions/index.html"
+    },
+    {
+        "name": "Link Generator",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/linkgen/gen.png?raw=true",
+        "description": "Official JMW link generator",
+        "path": "linkgen/index.html"
+    },
+    {
+        "name": "1",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/1/meta/apple-touch-icon.png?raw=true",
+        "description": "Exciting space adventure.",
+        "path": "1/index.html"
+    },
+    {
+        "name": "1v1.lol",
+        "image": "https://github.com/WhoIsEv/relivedassets/blob/main/1v1lol/splash.png?raw=true",
+        "description": "TPS game, like fortnite",
+        "path": "1v1-lol/index.html"
+    },
+    {
+        "name": "10 Minutes till dawn",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/10-minutes-till-dawn/splash.png?raw=true",
+        "description": "Demo version of shooting game.",
+        "path": "10-minutes-till-dawn/index.html"
+    },
+    {
+        "name": "100ng",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/100ng/100ng.jpg?raw=true",
+        "description": "100ng",
+        "path": "100ng/index.html"
+    },
+    {
+        "name": "2048",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/2048/2048.png?raw=true",
+        "description": "Challenging puzzle game.",
+        "path": "2048/index.html"
+    },
+    {
+        "name": "2048 Multitask",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/2048-multitask/splash.png?raw=true",
+        "description": "idk the difference",
+        "path": "2048-multitask/index.html"
+    },
+    {
+        "name": "A Dance Of Fire and Ice",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/a-dance-of-fire-and-ice/splash.png?raw=true",
+        "description": "A challenging rhythm game.",
+        "path": "a-dance-of-fire-and-ice/index.html"
+    },
+    {
+        "name": "Achievement Unlocked",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/achievementunlocked/achievementunlocked.png?raw=true",
+        "description": "Collect achievements to win!",
+        "path": "achievementunlocked/index.html"
+    },
+    {
+        "name": "A Dark Room",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/adarkroom/splash.png?raw=true",
+        "description": "A dark room, very sus...",
+        "path": "a-dark-room/index.html"
+    },
+    {
+        "name": "Alien Hominid",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/alienhominid/alienhominid.jpg?raw=true",
+        "description": "Aliens minds think alike.",
+        "path": "alienhominid/index.html"
+    },
+    {
+        "name": "Ball Dodge",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/balldodge/splash.jpeg?raw=true",
+        "description": "Dodge all of my moving balls.",
+        "path": "alienhominid/index.html"
+    },
+    {
+        "name": "Ballistic Chickens",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/ballistic-chickens/logo.png?raw=true",
+        "description": "adventure for noting",
+        "path": "ballistic-chickens/index.html"
+    },
+    {
+        "name": "Basketball Stars",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/basketball-stars/basketball-stars.jpg?raw=true",
+        "description": "A NBA based game.",
+        "path": "basketball-stars/index.html"
+    },
+    {
+        "name": "Bacon May Die",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bacon-may-die/splash.png?raw=true",
+        "description": "A Beta fighting game where you fight off wolves.",
+        "path": "bacon-may-die/index.html"
+    },
+    {
+        "name": "Backrooms",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/backrooms/img/splash.jpg?raw=true",
+        "description": "You noclipped into an unknown area, thinking you're alone, you're not.",
+        "path": "backrooms/index.html"
+    },
+    {
+        "name": "Bad Ice Cream",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bad-ice-cream/bad-ice-cream.png?raw=true",
+        "description": "Ice cream yum yum!",
+        "path": "bad-ice-cream/index.html"
+    },
+    {
+        "name": "Bad Ice Cream 2",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bad-ice-cream-2/bad-ice-cream-2.png?raw=true",
+        "description": "I truly dont know.",
+        "path": "bad-ice-cream-2/index.html"
+    },
+    {
+        "name": "Bad Ice Cream 3",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bad-ice-cream-3/bad-ice-cream-3.png?raw=true",
+        "description": "Eat ice cream, your sick.",
+        "path": "bad-ice-cream-3/index.html"
+    },
+    {
+        "name": "Baldi's Basics",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/baldis-basics/splash.png?raw=true",
+        "description": "Baldi's education and learning, thats me!",
+        "path": "baldis-basics/index.html"
+    },
+    {
+        "name": "Boxing Random",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/boxing-random/512x512.jpg?raw=true",
+        "description": "left right lil man",
+        "path": "boxing-random/index.html"
+    },
+    {
+        "name": "Basket Random",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/basket-random/splash.jpeg?raw=true",
+        "description": "GreenFN",
+        "path": "basket-random/index.html"
+    },
+    {
+        "name": "Boxhead2Play",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/boxhead2play/boxhead2play.jpg?raw=true",
+        "description": "idk",
+        "path": "boxhead2play/index.html"
+    },
+    {
+        "name": "Bonk.IO",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bonkio/image.png?raw=true",
+        "description": "Aliens minds think alike.",
+        "path": "bonkio/bonkio.html"
+    },
+    {
+        "name": "Burger and Frights",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/burger-and-frights/splash.png?raw=true",
+        "description": "Aliens minds think alike.",
+        "path": "burger-and-frights/index.html"
+    },
+    {
+        "name": "Bloons Tower Defense",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bloonstd/bloonstd.jpg?raw=true",
+        "description": "A tower defence game about popping ballons with monkies.",
+        "path": "bloonstd/index.html"
+    },
+    {
+        "name": "Bloons Tower Defense: 2",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bloonstd2/bloonstd2.png?raw=true",
+        "description": "2nd version of bloonstd",
+        "path": "bloonstd2/index.html"
+    },
+    {
+        "name": "Bloxors",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/bloxors/block.png?raw=true",
+        "description": "sisphyus but bloc",
+        "path": "bloxors/index.html"
+    },
+    {
+        "name": "Breaking The Bank",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/breakingthebank/breakingthebank.png?raw=true",
+        "description": "break the bank with henry stickmen.",
+        "path": "breakingthebank/index.html"
+    },
+    {
+        "name": "Cookie Clicker",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/cookie-clickers/cookie-clicker/img/cookieShower3.png?raw=true",
+        "description": "Eat ice cream, your sick.",
+        "path": "cookie-clickers/cookie-clicker/index.html"
+    },
+    {
+        "name": "Cannon Basketball 4",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/cannon-basketball-4/img/splash.png?raw=true",
+        "description": "idk",
+        "path": "cannon-basketball-4/index.html"
+    },
+    {
+        "name": "Canyon Defense",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/canyondefense/canyondefense.png?raw=true",
+        "description": "defense",
+        "path": "canyondefense/index.html"
+    },
+    {
+        "name": "Cars Simulator",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/cars-simulator/splash.png?raw=true",
+        "description": "idk",
+        "path": "cars-simulator/index.html"
+    },
+    {
+        "name": "Champion Island",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/champion-island/splash.png?raw=true",
+        "description": "Google Duddle",
+        "path": "champion-island/index.html"
+    },
+    {
+        "name": "Chrome Dino",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/chrome-dino/images/default_100_percent/offline/100-disabled.png?raw=true",
+        "description": "hurdle",
+        "path": "chrome-dino/index.html"
+    },
+    {
+        "name": "Circlo",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/circlo/img/download.png?raw=true",
+        "description": "Aliens minds think alike.",
+        "path": "circlo/index.html"
+    },
+    {
+        "name": "Champion Archer",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/championarcher/championarcher.png?raw=true",
+        "description": "",
+        "path": "championarcher/index.html"
+    },
+    {
+        "name": "Cars Simulator",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/cars-simulator/splash.png?raw=true",
+        "description": "",
+        "path": "cars-simulator/index.html"
+    },
+    {
+        "name": "Canyon Defense",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/canyondefense/canyondefense.png?raw=true",
+        "description": "",
+        "path": "canyondefense/index.html"
+    },
+    {
+        "name": "Cell Machine",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/cell-machine/img/te9nDu.png?raw=true",
+        "description": "",
+        "path": "cell-machine/index.html"
+    },
+    {
+        "name": "ClassiCube",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/classicube/texpacks/classicube.jpeg?raw=true",
+        "description": "",
+        "path": "classicube/index.html"
+    },
+    {
+        "name": "Cluster Rush",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/cluster-rush/splash.png?raw=true",
+        "description": "",
+        "path": "cluster-rush/index.html"
+    },
+    {
+        "name": "Core Ball",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/core-ball/pr_source.png?raw=true",
+        "description": "",
+        "path": "core-ball/index.html"
+    },
+    {
+        "name": "CraftMine",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/craftmine/images/craftmine.png?raw=true",
+        "description": "",
+        "path": "craftmine/index.html"
+    },
+    {
+        "name": "Creative Kill Chamber",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/creativekillchamber/creativekillchamber.jpg?raw=true",
+        "description": "",
+        "path": "creativekillchamber/index.html"
+    },
+    {
+        "name": "Crossy Road",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/crossyroad/crossyroad.png?raw=true",
+        "description": "",
+        "path": "crossyroad/index.html"
+    },
+    {
+        "name": "CS:GO Clicker",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/csgo-clicker/images/case1.png?raw=true",
+        "description": "",
+        "path": "csgo-clicker/index.html"
+    },
+    {
+        "name": "Cut The Rope",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/ctr/logo.png?raw=true",
+        "description": "",
+        "path": "ctr/index.html"
+    },
+    {
+        "name": "CubeField",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/cubefield/assets/splash.png?raw=true",
+        "description": "",
+        "path": "cubefield/index.html"
+    },
+    {
+        "name": "Draw The Hill",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/draw-the-hill/icons/icon-512.png?raw=true",
+        "description": "A game to draw hills and get over it",
+        "path": "draw-the-hill/index.html"
+    },
+    {
+        "name": "Drift Hunters",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/drift-hunters/drift-hunters.png?raw=true",
+        "description": "Drift away with beautiful cars!",
+        "path": "drift-hunters/index.html"
+    },
+    {
+        "name": "Drive Mad",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/drive-mad/logo.jpg?raw=true",
+        "description": "GRR! STUPID DRIVERS!",
+        "path": "drive-mad/index.html"
+    },
+    {
+        "name": "Dante",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/dante/splash.png?raw=true",
+        "description": "",
+        "path": "dante/index.html"
+    },
+    {
+        "name": "Deal or no deal",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/deal-or-no-deal/index.jpg?raw=true",
+        "description": "",
+        "path": "deal-or-no-deal/index.html"
+    },
+    {
+        "name": "Death Run 3D",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/death-run-3d/img/death.png?raw=true",
+        "description": "",
+        "path": "death-run-3d/index.html"
+    },
+    {
+        "name": "Deepest Sword",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/deepest-sword/splash.jpg?raw=true",
+        "description": "",
+        "path": "deepest-sword/index.html"
+    },
+    {
+        "name": "Defend The Tank",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/defend-the-tank/portrait-start.jpg?raw=true",
+        "description": "",
+        "path": "defend-the-tank/index.html"
+    },
+    {
+        "name": "Doctor Acorn 2",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/doctor-acorn2/splash.jpg?raw=true",
+        "description": "",
+        "path": "doctor-acorn2/index.html"
+    },
+    {
+        "name": "Doge 2048",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/doge2048/doge1.jpeg?raw=true",
+        "description": "",
+        "path": "doge2048/index.html"
+    },
+    {
+        "name": "Doodle Jump",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/doodle-jump/doodle.png?raw=true",
+        "description": "",
+        "path": "doodle-jump/index.html"
+    },
+    {
+        "name": "DOOM",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/doom/splash.jpeg?raw=true",
+        "description": "",
+        "path": "doom/doom.html"
+    },
+    {
+        "name": "Double Wires",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/doublewires/doublewires.png?raw=true",
+        "description": "",
+        "path": "doublewires/index.html"
+    },
+    {
+        "name": "Dragons Vs Icy Bricks",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/dragon-vs-bricks/splash.png?raw=true",
+        "description": "",
+        "path": "dragon-vs-bricks/index.html"
+    },
+    {
+        "name": "Drift Boss",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/drift-boss/splash.png?raw=true",
+        "description": "",
+        "path": "drift-boss/index.html"
+    },
+    {
+        "name": "Duck Life 1",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/ducklife1/ducklife.png?raw=true",
+        "description": "",
+        "path": "ducklife1/index.html"
+    },
+    {
+        "name": "Duck Life 2",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/ducklife2/ducklife2.png?raw=true",
+        "description": "",
+        "path": "ducklife2/index.html"
+    },
+                {
+        "name": "Duck Life 3",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/ducklife3/duck.png?raw=true",
+        "description": "",
+        "path": "ducklife3/index.html"
+    },
+    {
+        "name": "Duck Life 4",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/ducklife4/splash.jpg?raw=true",
+        "description": "",
+        "path": "ducklife4/index.html"
+    },
+    {
+        "name": "Eaglercraft Gateway (minecraft hosts)",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/minecraft-15/splash.jpeg?raw=true",
+        "description": "Minecraft! free mc frfrfr",
+        "path": "precision-client/gateway.html"
+    },
+    {
+        "name": "Monkey Mart",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/MonkeyMart/bg_loading.png?raw=true",
+        "description": "Sell stuff and benefit!",
+        "path": "MonkeyMart/index.html"
+    },
+    {
+        "name": "Offline Paradise",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/OfflineParadise/assets/icon.jpeg?raw=true",
+        "description": "Basically a game with offline world.",
+        "path": "OfflineParadise/index.html"
+    },
+    {
+        "name": "Rocket Soccer Derby",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/Rocket-League/splash.png?raw=true",
+        "description": "Bootleg of rocket league",
+        "path": "Rocket-League/index.html"
+    },
+    {
+        "name": "Riddle School",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/riddleschool/riddleschool.png?raw=true",
+        "description": "Riddle some school shit",
+        "path": "riddleschool/index.html"
+    },
+    {
+        "name": "Riddle School 2",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/riddleschool2/riddleschool2.png?raw=true",
+        "description": "Riddle some school shit",
+        "path": "riddleschool2/index.html"
+    },
+    {
+        "name": "Riddle School 3",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/riddleschool3/riddleschool3.png?raw=true",
+        "description": "Riddle some school shit",
+        "path": "riddleschool3/index.html"
+    },
+    {
+        "name": "Riddle School 4",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/riddleschool4/riddleschool4.png?raw=true",
+        "description": "Riddle some school shit",
+        "path": "riddleschool4/index.html"
+    },
+    {
+        "name": "Riddle School 5",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/riddleschool5/riddleschool5.png?raw=true",
+        "description": "Riddle some school shit",
+        "path": "riddleschool5/index.html"
+    },
+    {
+        "name": "Riddle Transfer",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/riddletransfer/riddletransfer.png?raw=true",
+        "description": "Riddle some school shit",
+        "path": "riddletransfer/index.html"
+    },
+    {
+        "name": "Riddle Transfer 2",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/riddletransfer2/riddletransfer2.png?raw=true",
+        "description": "Riddle some school shit",
+        "path": "riddletransfer2/index.html"
+    },
+    {
+        "name": "Roblox",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/roblox%20copy/splash.png?raw=true",
+        "description": "Powering 'imagination'.",
+        "path": "roblox/index.html"
+    },
+    {
+        "name": "Subway Surfers",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/subway-surfers/img/splash.jpg?raw=true",
+        "description": "Hello and welcome to my- yap ahead subway surfers gameplay",
+        "path": "subway-surfers/index.html"
+    },
+    {
+        "name": "Stumble Guys",
+        "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/stumble-guys/stumble-guys.jpeg?raw=true",
+        "description": "Bootleg of rocket league",
+        "path": "stumble-guys/index.html"
+    }
+]
