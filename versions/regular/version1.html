@@ -144,7 +144,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 20px;
         }
 
@@ -1448,6 +1448,12 @@
                 "path": "ducklife4/index.html"
             },
             {
+                "name": "Duke Nukem 2",
+                "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/duke-nukem-2/splash.jpg?raw=true",
+                "description": "",
+                "path": "duke-nukem-2/index.html"
+            },
+            {
                 "name": "Eaglercraft Gateway (minecraft hosts)",
                 "image": "https://github.com/GalacticNetwork/3kh0-assets/blob/main/minecraft-15/splash.jpeg?raw=true",
                 "description": "Minecraft! free mc frfrfr",
@@ -1535,7 +1541,7 @@
 
         const servers = [
             "https://learn-with.jskjsv6.workers.dev/GalacticNetwork/3kh0-assets/main/",
-            "https://rawgit.net/GalacticNetwork/3kh0-assets/main/",
+            "https://rawcdn.rawgit.net/GalacticNetwork/3kh0-assets/main/",
             "https://schoology-learning.us.kg/GalacticNetwork/3kh0-assets/main/",
         ];
 
@@ -1560,7 +1566,7 @@
                     const gameCard = document.createElement('div');
                     gameCard.className = 'game-card';
                     gameCard.innerHTML = `
-                    <img src="${game.image}" alt="${game.name}">
+                    <img onerror="this.src='https://github.com/GalacticNetwork/jordansmathwork-v6/blob/main/assets/images/no-icon-found.png?raw=true'" src="${game.image}" alt="${game.name}">
                     <h4>${game.name}</h4>
                 `;
                     gameCard.onclick = () => loadGame(game.path);
